@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital@1&display=swap");
+
+* {
+	margin: 0px;
+	font-family: "Barlow", sans-serif;
+	--dark: #262626;
+	--peach: #bf907e;
+	--curcuma: #f29849;
+	--white: #f2e2ce;
+	--wood: #bfa77a;
+}
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+}
+#vertical-img {
+	width: 30vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url("https://getwallpapers.com/wallpaper/full/1/a/1/538243.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.stripe {
+	width: 30vw;
+	height: 15vh;
+	background-color: rgba(191, 167, 122, 0.12);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--white);
+	font-size: 6vh;
+	backdrop-filter: blur(6px);
+}
+#main-container {
+	width: 70vw;
+	height: 100vh;
+	background-color: var(--dark);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+#resume {
+	width: 70vw;
+	height: 33vh;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	font-size: 3vh;
+	color: var(--white);
+}
+#form-container {
+	width: 70vw;
+	height: 33vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(75, 72, 66, 0.42);
+}
+#tcs {
+	width: 70vw;
+	height: 33vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
