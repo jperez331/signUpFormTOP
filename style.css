@@ -63,6 +63,26 @@ body {
 	justify-content: center;
 	background-color: rgba(75, 72, 66, 0.42);
 }
+input {
+	border: 2px solid #000;
+	margin-bottom: 15px;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+input:invalid {
+	border-color: red;
+}
+
+input:valid {
+	border-color: green;
+}
+#form-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 3vh;
+}
 #tcs {
 	width: 70vw;
 	height: 33vh;
