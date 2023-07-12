@@ -6,7 +6,7 @@
 	--dark: #262626;
 	--peach: #bf907e;
 	--curcuma: #f29849;
-	--white: #f2e2ce;
+	--white: #ffffff;
 	--wood: #bfa77a;
 }
 body {
@@ -36,6 +36,9 @@ body {
 	font-size: 6vh;
 	backdrop-filter: blur(6px);
 }
+#company-name {
+	font-size: 5vw;
+}
 #main-container {
 	width: 70vw;
 	height: 100vh;
@@ -46,13 +49,14 @@ body {
 	justify-content: center;
 }
 #resume {
-	width: 70vw;
+	width: 50vw;
 	height: 33vh;
 	display: flex;
-	align-items: flex-end;
+	align-items: center;
 	justify-content: center;
 	font-size: 3vh;
 	color: var(--white);
+	padding-top: 3vh;
 }
 #form-container {
 	width: 70vw;
@@ -64,24 +68,41 @@ body {
 	background-color: rgba(75, 72, 66, 0.42);
 }
 input {
-	border: 2px solid #000;
+	border: 2px solid #433f3f;
 	margin-bottom: 15px;
 	padding: 5px;
 	border-radius: 5px;
+	height: 2vh;
+	width: 15vw;
 }
-
-input:invalid {
-	border-color: red;
+input:required {
+	border-color: var(--dark);
 }
-
 input:valid {
 	border-color: green;
 }
+input:invalid {
+	border-color: var(--curcuma);
+}
+
 #form-container {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	gap: 3vh;
+}
+.row-item {
+	display: flex;
+	flex-direction: column;
+	font-size: 2vh;
+	color: var(--wood);
+}
+.form-row {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: 3vh;
+	gap: 3vw;
+	margin-left: 7vw;
 }
 #tcs {
 	width: 70vw;
@@ -90,4 +111,18 @@ input:valid {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	color: var(--white);
+	font-size: 1vw;
+	gap: 3vh;
+}
+#btn {
+	border: none;
+	font-size: 2vh;
+	height: auto;
+	width: 12vw;
+	background-color: var(--wood);
+}
+#btn:hover {
+	border-color: var(--peach);
+	background-color: var(--peach);
 }

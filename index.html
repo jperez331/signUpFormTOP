@@ -16,45 +16,56 @@
 			<div id="resume">
 				<p>
 					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi laborum
-					doloremque voluptas consequuntur deserunt explicabo, nihil sint neque
-					culpa ex ullam labore alias at excepturi expedita aut veniam cum quis?
+					doloremque voluptas consequuntur
 				</p>
 			</div>
 			<div>
 				<form action="register" id="form-container">
 					<div id="row1" class="form-row">
-						<label for="fname">*First Name</label>
-						<input type="text" name="first_name" id="fname" required />
-						<label for="lname">*Last Name</label>
-						<input type="text" name="last_name" id="lname" required />
+						<div class="row-item">
+							<label for="fname">*First Name</label>
+							<input type="text" name="first_name" id="fname" required />
+						</div>
+						<div class="row-item">
+							<label for="lname">*Last Name</label>
+							<input type="text" name="last_name" id="lname" required />
+						</div>
 					</div>
 					<div id="row2" class="form-row">
-						<label for="phone">*Phone Number</label>
-						<input
-							type="number"
-							name="phone"
-							id="phone"
-							maxlength="10"
-							required
-						/>
-						<label for="email">*E-mail</label>
-						<input type="email" name="email" id="email" required />
+						<div class="row-item">
+							<label for="phone">*Phone Number</label>
+							<input
+								type="number"
+								name="phone"
+								id="phone"
+								maxlength="10"
+								required
+							/>
+						</div>
+						<div class="row-item">
+							<label for="email">*E-mail</label>
+							<input type="email" name="email" id="email" required />
+						</div>
 					</div>
 					<div id="row3" class="form-row">
-						<label for="password">*Password</label>
-						<input type="password" name="password" id="password" required />
-						<label for="rpassword">Confirm Password</label>
-						<input
-							type="password"
-							name="confirm_password"
-							id="rpassword"
-							required
-						/>
+						<div class="row-item">
+							<label for="password">*Password</label>
+							<input type="password" name="password" id="password" required />
+						</div>
+						<div class="row-item">
+							<label for="rpassword">*Confirm Password</label>
+							<input
+								type="password"
+								name="confirm_password"
+								id="rpassword"
+								required
+							/>
+						</div>
 					</div>
 				</form>
 			</div>
 			<div id="tcs">
-				<input type="button" value="Submit" />
+				<input id="btn" type="submit" value="Create account" />
 				<p>Terms & Conditions</p>
 			</div>
 		</div>
